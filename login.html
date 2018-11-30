@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Burbuddy Super Admin</title>
+
+<!-- Bootstrap core CSS-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="superadmin-login-wrapper">
+    <div class="login-panel-holder">
+	  <img src="images/logo_index.png" alt="Logo" class="logo-center">
+	  <h1>Super Admin</h1>
+      <div class="login-form-holder">
+        <form method="POST">
+          <ul class="superadmin-login-form-holder">
+            <li class="email-icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABH0lEQVQ4jdXTr0tDYRTG8c82ZllcmkXwH7AMBlrElWUVQct0TVCsliWDVdwwatKkecWoXfMQtPofLOgM9wxksB93rvjAvQ8857xfeHnPYbxKaOEdvfBW5DOpjE80sYSF8Gbk5bTAAj7QGFFvRL2QBnokueY4XeAkDfQeWxN6NvGQBvqI6oSeavRNrUscT+g5xFUaaAXfyI6oZ6NeSQOFtuSxikN5MfJ2WiDkcCYZ+much/ciz80CHaiEA5yGz7xN/0eL2JVsTQcveAvvRL4XfWOVxz6eJeNyJ1nDGlawHF6L/Db6nuJcfhhYQRc3WEVmyhtlsBbnun7N7bpkTOpTgkapHpwNeMXOH4EDbQfPl9HrmFbZ4OnPCThQf/Cb6/cDAJNM50Z0dF4AAAAASUVORK5CYII=" alt="User">
+              <input type="email" placeholder="User Name">
+            </li>
+            <li class="password-icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAABbklEQVRIid3UvUuVYRzG8Q+FUENDOIriJCQprjofcKj+AQ2bcy4acvZl0qUit1qCAy01yFl6UQiayhqOQw7+BQ2+gDjU8FxHBJ9zPJ2nli644Mfvvn7fh5v7fm7aaxRP0MRx3ExvtMPcOfVhDft4hmkMxtPp7SfTdxHsMt7gM4YxiXV8itfTG07mbWbaagnbuJat/cQy7sTL6T1N5mt6pRrEEcaxgm8YKMkNZG0FN3CIoTLgI2xk8RAjHXYycga0kdlzquMB7qPRAdZSA/OZqZcFPmIWi1jtAria7F18KAtsYUZxMEtdAFu5mcyeagI1fM8XX8W1C9zKLWa2FpYT7GG3ovfC8kubY/9DDYX1HwBv40t8qyrwuuJ3nFXct6P0egaO4QBXcSX1zSrAS9jE63gzvZ6BMIf3eId7HXJdAxfwAi/x+G8AnytelkbqysA5xfNUT10Z2K3+HbCJh+hXXNpe3B/GD5jCTuhVvIOp326/j2wVpf3aAAAAAElFTkSuQmCC" alt="Password">
+              <input type="password" placeholder="Password">
+            </li>
+            <li><input type="submit" value="Login" class="login-superadmin-submit-btn"></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div id="particles-js"></div>
+  </main>
+
+<!-- Bootstrap core JavaScript--> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type="text/javascript">
+	// ParticlesJS Config.
+particlesJS("particles-js", {
+	particles: {
+		number: {
+			value: 80,
+			density: {
+				enable: true,
+				value_area: 700
+			}
+		},
+		color: {
+			value: "#ffffff"
+		},
+		shape: {
+			type: "circle",
+			stroke: {
+				width: 0,
+				color: "#000000"
+			},
+			polygon: {
+				nb_sides: 5
+			}
+		},
+		opacity: {
+			value: 0.5,
+			random: false,
+			anim: {
+				enable: false,
+				speed: 1,
+				opacity_min: 0.1,
+				sync: false
+			}
+		},
+		size: {
+			value: 3,
+			random: true,
+			anim: {
+				enable: false,
+				speed: 40,
+				size_min: 0.1,
+				sync: false
+			}
+		},
+		line_linked: {
+			enable: true,
+			distance: 150,
+			color: "#ffffff",
+			opacity: 0.4,
+			width: 1
+		},
+		move: {
+			enable: true,
+			speed: 3,
+			direction: "none",
+			random: false,
+			straight: false,
+			out_mode: "out",
+			bounce: false,
+			attract: {
+				enable: false,
+				rotateX: 600,
+				rotateY: 1200
+			}
+		}
+	},
+	interactivity: {
+		detect_on: "canvas",
+		events: {
+			onhover: {
+				enable: true,
+				mode: "grab"
+			},
+			onclick: {
+				enable: true,
+				mode: "push"
+			},
+			resize: true
+		},
+		modes: {
+			grab: {
+				distance: 140,
+				line_linked: {
+					opacity: 1
+				}
+			},
+			bubble: {
+				distance: 400,
+				size: 40,
+				duration: 2,
+				opacity: 8,
+				speed: 3
+			},
+			repulse: {
+				distance: 200,
+				duration: 0.4
+			},
+			push: {
+				particles_nb: 4
+			},
+			remove: {
+				particles_nb: 2
+			}
+		}
+	},
+	retina_detect: true
+});
+</script>
+
+<!-- Core plugin JavaScript--> 
+<script src="js/jquery.easing.min.js"></script> 
+
+</body>
+</html>

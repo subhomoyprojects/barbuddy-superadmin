@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Burbuddy Super Admin</title>
+
+<!-- Bootstrap core CSS-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" media="screen">
+<!-- <link rel="stylesheet" href="https://www.cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" /> -->
+<link href="css/style_suvomoy.css" rel="stylesheet">
+
+<!-- Custom styles for this template-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+<nav class="navbar navbar-expand navbar-light static-top nav-custom"> <a class="navbar-brand mr-1" href="index.html"> <img src="images/logo.png" alt="Logo"> </a>
+  <button class="btn btn-link btn-sm text-muted order-1 order-sm-0" id="sidebarToggle" href="#"> <i class="fa fa-bars"></i> </button>
+  
+  <!-- Navbar -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user-circle fa-fw"></i> John D. </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown"> 
+        <!-- <a class="dropdown-item" href="#">Settings</a>
+            <div class="dropdown-divider"></div> --> 
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a> </div>
+    </li>
+  </ul>
+</nav>
+<div id="wrapper"> 
+  
+  <!-- Sidebar -->
+  <ul class="sidebar navbar-nav">
+    <li class="nav-item"> <a class="nav-link" href="barlisting.html"> <i class="fa fa-glass"></i> <span>Manage Bar</span> </a> </li>
+    <li class="nav-item"> <a class="nav-link" href="managecategory.html"> <i class="fa fa-sitemap"></i> <span>Manage Category</span> </a> </li>
+    <!-- <li class="nav-item"> <a class="nav-link" href="managebrands.html"> <i class="fa fa-folder"></i> <span>Manage Brands</span> </a> </li>-->
+    <li class="nav-item"> <a class="nav-link" href="managenotification.html"> <i class="fa fa-bell"></i> <span>Manage Notification</span> </a> </li>
+    <li class="nav-item"> <a class="nav-link" href="manageappuser.html"> <i class="fa fa-user-circle  "></i> <span>Manage App Users</span> </a> </li>
+    <li class="nav-item"> <a class="nav-link" href="managesubscription.html"> <i class="fa fa-money"></i> <span>Manage Subcriptions</span> </a> </li>
+    <li class="nav-item"> <a class="nav-link" href="reports.html"> <i class="fa fa-flag"></i> <span>Manage Reports</span> </a> </li>
+    <li class="nav-item active"> <a class="nav-link" href="#"> <i class="fa fa-cog"></i> <span>General Settings</span> </a> </li>
+  </ul>
+  <div id="content-wrapper">
+    <div class="container-fluid"> 
+      <h1 class="main-head mb-4">Manage Analytics</h1>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+            <div class="setting-tiles analytics-holder">
+                <div class="supad-icon mng-supad-ic manage-super-admin-icon5"></div>
+                <span>Total App Users</span>
+                <strong>1,205</strong>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+            <div class="setting-tiles analytics-holder">
+                <div class="supad-icon mng-supad-ic manage-super-admin-icon6"></div>
+                <span>Total Bar Owners</span>
+                <strong>102</strong>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 chart-holder android-ios-chart-holder">
+          <div id="chartdiv" style="width:100%; height:400px;"></div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 chart-holder owners-chart-holder">
+          
+        </div>
+      </div>
+    </div>
+    <!-- /.container-fluid --> 
+    
+    <!-- Sticky Footer -->
+    <footer class="sticky-footer">
+      <div class="container my-auto">
+        <div class="copyright text-center my-auto"> <span>Copyright © Barbuddy 2018</span> </div>
+      </div>
+    </footer>
+  </div>
+  <!-- /.content-wrapper --> 
+  
+</div>
+<!-- /#wrapper --> 
+
+<!-- Scroll to Top Button--> 
+<a class="scroll-to-top rounded" href="#page-top"> <i class="fa fa-angle-up"></i> </a> 
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+      </div>
+      <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-primary" href="login.html">Logout</a> </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript--> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/amcharts.js"></script>
+<script src="js/serial.js"></script>
+
+<!-- Core plugin JavaScript--> 
+<script src="js/jquery.easing.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script> -->
+<!-- Custom scripts for all pages--> 
+<script src="js/custom.js"></script> 
+
+<!-- <script type="text/javascript">
+      $('.card-header-wrapper').on('click', function(e) {
+        var edit_list = $('.edit-list');
+        var delete_list = $('.delete-list');
+       if (e.target != edit_list || e.target != delete_list )
+         //return false;
+       console.log(e.target);
+       console.log(edit_list);
+      });
+    </script> --> 
+
+<script type="text/javascript">
+      $(document).on('click.bs.dropdown.data-api', '.dropdown.keep-inside-clicks-open', function (e) {
+ e.stopPropagation();
+});
+
+
+// Chart Js Start
+
+var chart;
+
+var chartData = [
+    {
+        "year": 2005,
+        "Android": 23.5,
+        "Ios": 18.1
+    },
+    {
+        "year": 2006,
+        "Android": 26.2,
+        "Ios": 22.8
+    },
+    {
+        "year": 2007,
+        "Android": 30.1,
+        "Ios": 23.9
+    },
+    {
+        "year": 2008,
+        "Android": 29.5,
+        "Ios": 25.1
+    },
+    {
+        "year": 2009,
+        "Android": 24.6,
+        "Ios": 25
+    }
+];
+
+
+AmCharts.ready(function () {
+    // SERIAL CHART
+    chart = new AmCharts.AmSerialChart();
+    chart.dataProvider = chartData;
+    chart.categoryField = "year";
+    chart.startDuration = 1;
+    chart.plotAreaBorderColor = "#DADADA";
+    chart.plotAreaBorderAlpha = 1;
+    // this single line makes the chart a bar chart
+    chart.rotate = true;
+
+    // AXES
+    // Category
+    var categoryAxis = chart.categoryAxis;
+    categoryAxis.gridPosition = "start";
+    categoryAxis.gridAlpha = 0.1;
+    categoryAxis.axisAlpha = 0;
+
+    // Value
+    var valueAxis = new AmCharts.ValueAxis();
+    valueAxis.axisAlpha = 0;
+    valueAxis.gridAlpha = 0.1;
+    valueAxis.position = "top";
+    chart.addValueAxis(valueAxis);
+
+    // GRAPHS
+    // first graph
+    var graph1 = new AmCharts.AmGraph();
+    graph1.type = "column";
+    graph1.title = "Android";
+    graph1.valueField = "Android";
+    graph1.balloonText = "Android:[[value]]";
+    graph1.lineAlpha = 0;
+    graph1.fillColors = "#ADD981";
+    graph1.fillAlphas = 1;
+    chart.addGraph(graph1);
+
+    // second graph
+    var graph2 = new AmCharts.AmGraph();
+    graph2.type = "column";
+    graph2.title = "Ios";
+    graph2.valueField = "Ios";
+    graph2.balloonText = "Ios:[[value]]";
+    graph2.lineAlpha = 0;
+    graph2.fillColors = "#81acd9";
+    graph2.fillAlphas = 1;
+    chart.addGraph(graph2);
+
+    // LEGEND
+    var legend = new AmCharts.AmLegend();
+    chart.addLegend(legend);
+
+    chart.creditsPosition = "top-right";
+
+    // WRITE
+    chart.write("chartdiv");
+});
+
+// Chart Js End
+
+
+
+    </script>
+</body>
+</html>

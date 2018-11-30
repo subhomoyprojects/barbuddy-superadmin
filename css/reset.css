@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Ubuntu:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+/*
+
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Ubuntu', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+*/
+/*-=-=-=-==-==-=-=-=-=-=-=-=-==-==-==-= Common Library -=-=-------------=-=-*/
+.no_margin{margin:0!important}.no_padding{padding:0!important}.no_margin_left_right{margin-left:0!important;margin-right:0!important}.no_margin_top_bottom{margin-top:0!important;margin-bottom:0!important}*,p{margin:0;}.no_padding_left_right{padding-left:0!important;padding-right:0!important}.no_padding_top_bottom{padding-top:0!important;padding-bottom:0!important}*{outline:0;padding:0}.html{font-size:14px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{font-family: 'Ubuntu', sans-serif;font-size:12px}h1,h2,h3,h4,h5,h6{font-family: 'Lato', sans-serif;}a,button{text-decoration:none;color:#555;display:inline-block}.block_element,address,article,aside,footer,header,nav,section{display:block}a:focus,a:hover{color:#23527c;text-decoration:none}img{border:0;vertical-align:middle;max-width:100%}dl,ol,ul{list-style:none}.margin_top_5{margin-top:5px}.margin_top_10{margin-top:10px}.margin_top_20{margin-top:20px}.margin_top_30{margin-top:30px}.margin_top_40{margin-top:40px}.margin_top_50{margin-top:50px}.margin_top_60{margin-top:60px}.margin_top_70{margin-top:70px}.margin_top_80{margin-top:80px}.margin_top_90{margin-top:90px}.margin_top_100,.margin_top_110{margin-top:100px}.margin_top_120{margin-top:120px}.margin_top_130{margin-top:130px}.margin_bottom_5{margin-bottom:5px}.margin_bottom_10{margin-bottom:10px}.margin_bottom_20{margin-bottom:20px}.margin_bottom_30{margin-bottom:30px}.margin_bottom_40{margin-bottom:40px}.margin_bottom_50{margin-bottom:50px}.margin_bottom_60{margin-bottom:60px}.margin_bottom_70{margin-bottom:70px}.margin_bottom_80{margin-bottom:80px}.margin_bottom_90{margin-bottom:90px}.margin_bottom_100{margin-bottom:100px}.margin_bottom_120{margin-bottom:120px}.margin_bottom_130{margin-bottom:130px}.padding_top_5{padding-top:5px}.padding_top_10{padding-top:10px}.padding_top_20{padding-top:20px}.padding_top_30{padding-top:30px}.padding_top_40{padding-top:40px}.padding_top_50{padding-top:50px}.padding_top_60{padding-top:60px}.padding_top_70{padding-top:70px}.padding_top_80{padding-top:80px}.padding_top_90{padding-top:90px}.padding_top_100{padding-top:100px}.padding_top_120{padding-top:120px}.padding_top_130{padding-top:130px}.padding_bottom_5{padding-bottom:5px}.padding_bottom_10{padding-bottom:10px}.padding_bottom_20{padding-bottom:20px}.padding_bottom_30{padding-bottom:30px}.padding_bottom_40{padding-bottom:40px}.padding_bottom_50{padding-bottom:50px}.padding_bottom_60{padding-bottom:60px}.padding_bottom_70{padding-bottom:70px}.padding_bottom_80{padding-bottom:80px}.padding_bottom_90{padding-bottom:90px}.padding_bottom_100{padding-bottom:100px}.padding_bottom_120{padding-bottom:120px}.padding_bottom_130{padding-bottom:130px}button{background:0 0;border:none}.table_element{display:table}.inline_block_element{display:inline-block}ul{margin-bottom:0}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #686868;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #686868;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #686868;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #686868;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #686868;
+}
+::placeholder { /* Most modern browsers support this now. */
+    color: #686868;
+    opacity:  1;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+    -moz-appearance: textfield;
+ }
+ input:not([type="submit"]):focus,select:focus,textarea:focus{
+    box-shadow: none;
+ }
+ button:focus{
+     box-shadow: none;
+ }
+ .alert-success,.alert-danger{
+    color: #ffffff;
+    font-size: 14px;
+    border-color: transparent;
+    box-shadow: 0 5px 38px rgba(0,0,0,0.2);
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    border: 2px solid transparent;
+ }
+ .alert-danger {
+    background-color: #ca4350;
+    border-color:#f1a1a9;
+ }
+ .alert-success {
+    background-color: #4ee26a;
+    border-color:#d0ffd9;
+ }
+ .disabled,a.disabled,button.disabled,input[type="submit"].disabled{
+    cursor: not-allowed;
+ }
+select{
+    cursor: pointer;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.tringle_arrow{
+    position: relative;
+}
+.tringle_arrow select{
+    cursor: pointer;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+/* .tringle_arrow::after {
+    position: absolute;
+    content: "\f107";
+    font-family: 'FontAwesome';
+    color: #000;
+    font-size: 19px;
+    top: 8px;
+    right: 8px;
+    pointer-events: none;
+} */
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.img_and_video_slider_controller{
+    max-width: 535px;
+    margin: 0 auto;
+}
+ /*-=-=-=-==-==-=-=-=-=-=-=-=-==-==-==-= Common Library -=-=-------------=-=-*/
+
+/* Add More Information */
+
+.img_and_video_slider_controller .carousel-control-next,
+.img_and_video_slider_controller .carousel-control-prev{
+    background-color: #898989;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+}
+.img_and_video_slider_controller .carousel-control-prev-icon,
+.img_and_video_slider_controller .carousel-control-next-icon{
+    width:15px;
+    height: 15px;
+}
+.img_and_video_slider_controller .carousel-control-prev{
+    left: -20px;
+}
+.img_and_video_slider_controller .carousel-control-next{
+    right: -20px;
+}
+.img_and_video_slider_controller .carousel-indicators{
+    display: none;
+}
+
+/* Add More Information */
+
+/* Add Drink Category Component */
+.category-input-holder .mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: #e5e5e5;
+}
+.category-input-holder .mat-form-field-label-wrapper{
+    display: none;
+}
+/* Add Drink Category Component */

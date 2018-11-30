@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Burbuddy Super Admin</title>
+
+<!-- Bootstrap core CSS-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/style_suvomoy.css" rel="stylesheet">
+
+<!-- Custom styles for this template-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+<nav class="navbar navbar-expand navbar-light static-top nav-custom"> <a class="navbar-brand mr-1" href="index.html"> <img src="images/logo.png" alt="Logo"> </a>
+  <button class="btn btn-link btn-sm text-muted order-1 order-sm-0" id="sidebarToggle" href="#"> <i class="fa fa-bars"></i> </button>
+  
+  <!-- Navbar -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user-circle fa-fw"></i> John D. </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown"> 
+        <!-- <a class="dropdown-item" href="#">Settings</a>
+            <div class="dropdown-divider"></div> --> 
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a> </div>
+    </li>
+  </ul>
+</nav>
+<div id="wrapper"> 
+  
+  <!-- Sidebar -->
+  <ul class="sidebar navbar-nav">
+    <li class="nav-item"> <a class="nav-link" href="barlisting.html"> <i class="fa fa-glass"></i> <span>Manage Bar</span> </a> </li>
+    <li class="nav-item"> <a class="nav-link" href="managecategory.html"> <i class="fa fa-sitemap"></i> <span>Manage Category</span> </a> </li>
+    <!-- <li class="nav-item"> <a class="nav-link" href="managebrands.html"> <i class="fa fa-folder"></i> <span>Manage Brands</span> </a> </li>-->
+    <li class="nav-item active"> <a class="nav-link" href="#"> <i class="fa fa-bell"></i> <span>Manage Notification</span> </a> </li>
+    <li class="nav-item"> <a class="nav-link" href="manageappuser.html"> <i class="fa fa-user-circle  "></i> <span>Manage App Users</span> </a> </li>
+    <li class="nav-item"> <a class="nav-link" href="managesubscription.html"> <i class="fa fa-money"></i> <span>Manage Subcriptions</span> </a> </li>
+    <li class="nav-item"> <a class="nav-link" href="reports.html"> <i class="fa fa-flag"></i> <span>Manage Reports</span> </a> </li>
+    <li class="nav-item"> <a class="nav-link" href="settings.html"> <i class="fa fa-cog"></i> <span>General Settings</span> </a> </li>
+  </ul>
+  <div id="content-wrapper">
+    <div class="container-fluid"> 
+      
+      <!-- Breadcrumbs
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Overview</li>
+          </ol>-->
+      
+      <h1 class="main-head mb-4">Manage Notification</h1>
+            
+      <!--Listing Items--> 
+      <!-- Grid row -->
+      <div class="row accordion-gradient-bcg d-flex justify-content-center offer-listing-controller"> 
+        
+        <!-- Grid column -->
+        <div class="col-xl-12 mb-2"> 
+          
+          <div class="manage-notification-list-holder"> <!--Manage Notification List Holder Start-->
+
+          <!--Accordion wrapper-->
+          <div class="accordion md-accordion accordion-9" id="managenotification_list" role="tablist" aria-multiselectable="true"> 
+            
+            <!-- Accordion card -->
+            <div class="card mb-2 list-card"> 
+              
+              <!-- Card header -->
+              <div class="card-header rgba-stylish-strong z-depth-1" role="tab" id="heading1">
+                <div class="card-header-wrapper">
+                  <span class="collapse-triger collapsed"  data-toggle="collapse" data-parent="#managenotification_list" href="#managenotification_list1" aria-expanded="false" aria-controls="managenotification_list1"></span>
+                  <ul class="offer-img-holder">
+                    <li class="hide-sm">
+                      <div class="bar_img_sm"> <img src="images/dummy_img2.png" alt="Bar"> </div>
+                    </li>
+                    <li>Notification Title Goes Here</li>
+                  </ul>
+                  <ul class="offer-img-edit-btn-holder">
+                    <li class="mr-2">
+                      <label class="margin-right-15px">Turn On</label>
+                      <label class="switch">
+                        <input type="checkbox" checked="">
+                        <span class="slider round"></span> 
+                      </label>
+                    </li>
+                    <li>
+                      <button type="button" class="edit-list show-hide-managenotification-edit-box"></button>
+                      <button class="delete-list"></button>
+                    </li>
+                  </ul>
+                  <div class="up-down-arrow" data-toggle="collapse" data-parent="#managenotification_list" href="#managenotification_list1" aria-expanded="false" aria-controls="managenotification_list1"><i class="fa fa-angle-down mt-2"></i></div>
+                </div>
+              </div>
+              
+              <!-- Card body -->
+              <div id="managenotification_list1" class="collapse" role="tabpanel" aria-labelledby="heading1" data-parent="#managenotification_list">
+                <div class="row card-body mb-1">
+                  <div class="col-sm-12 col-md-12 manage-category-p-controller">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  </div>
+                  <div class="col-sm-12 col-md-12 text-right manage-category-p-controller">
+                    <p><strong>Created Date :</strong> <span>24-09-2018</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion card --> 
+
+          </div>
+          <!--/.Accordion wrapper-->
+
+        </div> <!--Manage Notification List Holder End-->
+
+        <div class="manage-notification-edit-holder-box"> <!--Manage Notification Edit Holder Start-->
+          <div class="content-card">
+              <div class="happy_hours_form_holder">
+                  <form method="POST" class="relative">
+                      <ul class="form_holder">
+                      <li>
+                          <label>Notification Title</label>
+                          <input placeholder="Lorem Ipsum is simply dummy text" class="placeholder-opacity-half" type="text">
+                      </li>
+                      <li>
+                          <label>Notification Description</label>
+                          <textarea placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting" class="placeholder-opacity-half"></textarea>
+                      </li>
+                      <li class="no_border">
+                          <div class="half margin_right_30">
+                              <label class="width_100">Set Start Date</label>
+                              <div class="calender_icon">
+                                <input class="padding-right-30 placeholder-opacity-half" placeholder="19/11/2018" type="text">
+                              </div>
+                              
+                          </div>
+                          <div class="half">
+                              <label class="width_100">Set End Date</label>
+                              <div class="calender_icon">
+                                <input class="padding-right-30 placeholder-opacity-half" placeholder="19/11/2018" type="text">
+                              </div>
+                          </div>
+                      </li> 
+                      <li class="no_border">
+                        <label class="width_100">Notification Triggered Days*</label>
+                        <div class="day_active_inactive">
+                            <label><input type="checkbox">Sun</label>
+                            <label><input type="checkbox">Mon</label>
+                            <label><input type="checkbox">Tue</label>
+                            <label><input type="checkbox">Wed</label>
+                            <label><input type="checkbox">Thu</label>
+                            <label><input type="checkbox">Fri</label>
+                            <label><input type="checkbox">Sat</label>
+                        </div>
+                      </li> 
+                      <li>
+                        <label class="width_100">Set Time</label>
+                        <div class="watch_icon">
+                            <input class="placeholder-opacity-half" placeholder="10:30 pm" type="text">
+                        </div>
+                      </li>  
+                      <li>
+                          <label>Target Audience</label>
+                          <div class="tringle_arrow">
+                              <select>
+                                  <option value="All app user">All app user</option>
+                                  <option value="Free User">Free User</option>
+                                  <option value="Premium User">Premium User</option>
+                                </select>
+                          </div>
+                      </li>       
+                      </ul>
+
+                      <div class="row">
+                          <div class="col">
+                              <button type="button" class="btn btn-basic-custom show-notification-list-and-hide-manage-edit">Back</button>
+                          </div>
+                          <div class="col text-right">
+                              <button type="button" class="btn btn-success-custom show-notification-list-and-hide-manage-edit">Save Changes</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div> <!--Manage Notification Edit Holder End-->
+
+
+
+        <!-- Grid column --> 
+
+        </div>
+        
+      </div>
+      <!-- Grid row --> 
+      <!--Listing Items--> 
+
+
+      <!--Pagination-->
+  <ul class="pagination justify-content-end manage-pagination-show-hide">
+    <li class="page-item"><a class="page-link" href="javascript:void(0);"><</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">></a></li>
+  </ul>
+      <!--Pagination-->
+
+      
+    </div>
+    <!-- /.container-fluid --> 
+    
+    <!-- Sticky Footer -->
+    <footer class="sticky-footer">
+      <div class="container my-auto">
+        <div class="copyright text-center my-auto"> <span>Copyright © Barbuddy 2018</span> </div>
+      </div>
+    </footer>
+  </div>
+  <!-- /.content-wrapper --> 
+  
+</div>
+<!-- /#wrapper --> 
+
+<!-- Scroll to Top Button--> 
+<a class="scroll-to-top rounded" href="#page-top"> <i class="fa fa-angle-up"></i> </a> 
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+      </div>
+      <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-primary" href="login.html">Logout</a> </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript--> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<!-- For Batch Tag -->
+<script src="js/tagsly.js"></script>
+
+<!-- Core plugin JavaScript--> 
+<script src="js/jquery.easing.min.js"></script> 
+
+<!-- Custom scripts for all pages--> 
+<script src="js/custom.js"></script> 
+
+<script type="text/javascript">
+      $(document).on('click.bs.dropdown.data-api', '.dropdown.keep-inside-clicks-open', function (e) {
+ e.stopPropagation();
+});
+
+         // Beer Holder Show Hide 
+         
+         $(".show-hide-managenotification-edit-box").click(function(){
+            $(".manage-notification-edit-holder-box").show();
+            $(".manage-notification-list-holder").hide();
+            $(".manage-pagination-show-hide").hide();
+         });
+
+         $(".show-notification-list-and-hide-manage-edit").click(function(){
+            $(".manage-notification-edit-holder-box").hide();
+            $(".manage-notification-list-holder").show();
+            $(".manage-pagination-show-hide").show();
+         });
+                  
+         // Beer Holder Show Hide 
+
+         // Days Active and Inactive
+
+            $(".day_active_inactive label input[type=checkbox]").click(function(){
+            $(this.parentNode).toggleClass('active', this.checked);
+            });
+
+            // Days Active And Inactive
+
+    </script>
+</body>
+</html>

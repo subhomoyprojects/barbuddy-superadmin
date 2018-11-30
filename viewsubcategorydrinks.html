@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Burbuddy Super Admin</title>
+      <!-- Bootstrap core CSS-->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet" type="text/css" media="screen">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" />
+
+      <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="screen">
+      <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" media="screen">
+      <link href="css/style_suvomoy.css" rel="stylesheet">
+      <!-- Custom styles for this template-->
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body id="page-top">
+      <nav class="navbar navbar-expand navbar-light static-top nav-custom">
+         <a class="navbar-brand mr-1" href="index.html"> <img src="images/logo.png" alt="Logo"> </a>
+         <button class="btn btn-link btn-sm text-muted order-1 order-sm-0" id="sidebarToggle" href="#"> <i class="fa fa-bars"></i> </button>
+         <!-- Navbar -->
+         <ul class="navbar-nav ml-auto dropdown-controller-superadmin">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user-circle fa-fw"></i> John D. </a>
+               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                  <!-- <a class="dropdown-item" href="#">Settings</a>
+                     <div class="dropdown-divider"></div> --> 
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a> 
+               </div>
+            </li>
+         </ul>
+      </nav>
+      <div id="wrapper">
+         <!-- Sidebar -->
+         <ul class="sidebar navbar-nav">
+            <li class="nav-item"> <a class="nav-link" href="barlisting.html"> <i class="fa fa-glass"></i> <span>Manage Bar</span> </a> </li>
+            <li class="nav-item active"> <a class="nav-link" href="managecategory.html"> <i class="fa fa-sitemap"></i> <span>Manage Brands</span> </a> </li>
+            <!-- <li class="nav-item"> <a class="nav-link" href="managebrands.html"> <i class="fa fa-folder"></i> <span>Manage Brands</span> </a> </li>-->
+            <li class="nav-item"> <a class="nav-link" href="managenotification.html"> <i class="fa fa-bell"></i> <span>Manage Notification</span> </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="manageappuser.html"> <i class="fa fa-user-circle  "></i> <span>Manage App Users</span> </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="managesubscription.html"> <i class="fa fa-money"></i> <span>Manage Subcriptions</span> </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="reports.html"> <i class="fa fa-flag"></i> <span>Manage Reports</span> </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="settings.html"> <i class="fa fa-cog"></i> <span>General Settings</span> </a> </li>
+         </ul>
+         <div id="content-wrapper">
+            <div class="container-fluid">
+               <div class="row mb-4 border-decoration-heading">
+                     <div class="col-7">
+                        <h1 class="main-head border-none"><input type="text"  class="title-edit" value="Domestic" readonly></h1>
+                     </div>
+                     <div class="col-5 text-right top-app-user-controller">
+                        <button class="edit-title-drink-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                     </div>
+               </div>
+               <!-- Tabs -->
+               <section id="tabs">
+                  <div class="row">
+                     <div class="col-xl-12 ">
+                        <!-- Drinks Details -->
+                        <div class="content-card">
+                              <a href="managecategory.html" class="btn btn-basic-custom line-hight-28">Back</a>
+                              <button class="btn btn-success-custom float-right" data-toggle="modal" data-target="#adddrinkmanually">+ Add Drink</button>
+                                <!-- Drink Second Step Start -->
+                                <div class="liquor-holder">
+                                   <!-- Liquor Holder Start -->
+                                   <div class="pl-0 drink-category-special-holder">
+                                      <div class="tab-content" id="pills-tabContent">
+                                         
+                                         <div class="tab-pane fade show active" id="pills-cat5" role="tabpanel" aria-labelledby="pills-drinks-cat55">
+                                            <!-- Verticle Tab Start -->
+                                            <div class="row verticle-tab-controller">
+                                               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 verticle-tab-description-holder">
+                                                  <div class="tab-content" id="v-pills-tabContent">
+                                                     
+                                                     <div class="tab-pane fade" id="v-pills-sub-cat8" role="tabpanel" aria-labelledby="v-pills-sub-category8">
+                                                        Scotch
+                                                     </div>
+                                                     <div class="pl-0 tab-pane fade show active" id="v-pills-sub-cat9" role="tabpanel" aria-labelledby="v-pills-sub-category9">
+                                                        <div class="sub-tab-category-holder">
+                                                           <ul class="nav nav-pills glass-bottle-holder" id="pills-tab" role="tablist">
+                                                              <li class="nav-item">
+                                                                 <a class="nav-link active" id="pills-glass-bootle1" data-toggle="pill" href="#pills-glass" role="tab" aria-controls="pills-glass" aria-selected="true"><span class="glass-icon"></span>Glass</a>
+                                                              </li>
+                                                              <li class="nav-item">
+                                                                 <a class="nav-link" id="pills-glass-bootle2" data-toggle="pill" href="#pills-bottle" role="tab" aria-controls="pills-bottle" aria-selected="false"><span class="bottle-icon"></span>Bottle</a>
+                                                              </li>
+                                                           </ul>
+                                                           <div class="tab-content" id="pills-tabContent">
+                                                              <div class="pl-0 tab-pane fade show active" id="pills-glass" role="tabpanel" aria-labelledby="pills-glass-bootle1">
+                                                                 
+                                                                 <div class="drink-price-menual-enter-holder">
+                                                                    <!--Drink Price Menual Enter-->
+                                                                    <div class="row">
+                                                                       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 margin_top_10 price-icon-and-input-controller-of-drink view-drink-list-controller">
+                                                                          <div>
+                                                                             <input type="text" class="readonlremovetext" placeholder="Chardonnay" readonly>
+                                                                           </div>
+                                                                          <div>
+                                                                             <button type="button" class="edit-cat-view-btn"><i class="fa fa-edit"></i></button>
+                                                                              <button type="button" class="delete-cat-view-btn"><i class="fa fa-trash"></i></button>
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 margin_top_10 price-icon-and-input-controller-of-drink view-drink-list-controller">
+                                                                           <div>
+                                                                              <input type="text" class="readonlremovetext" placeholder="Chardonnay" readonly>
+                                                                            </div>
+                                                                           <div>
+                                                                              <button type="button" class="edit-cat-view-btn"><i class="fa fa-edit"></i></button>
+                                                                               <button type="button" class="delete-cat-view-btn"><i class="fa fa-trash"></i></button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                 </div>
+                                                                 <!--Drink Price Menual Enter-->
+                                                                 <div class="row margin_top_50">
+                                                                    <button type="button" class="add-category-model-opaner center-x" data-toggle="modal" data-target="#adddrinkmanually">+ Add Drink</button>
+                                                                 </div>
+                                                              </div>
+                                                              <div class=" pl-0 tab-pane fade" id="pills-bottle" role="tabpanel" aria-labelledby="pills-glass-bootle2">
+                                                               <div class="drink-price-menual-enter-holder">
+                                                                  <!--Drink Price Menual Enter-->
+                                                                  <div class="row">
+                                                                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 margin_top_10 price-icon-and-input-controller-of-drink view-drink-list-controller">
+                                                                           <div>
+                                                                              <input type="text" class="readonlremovetext" placeholder="Chardonnay" readonly>
+                                                                              </div>
+                                                                           <div>
+                                                                              <button type="button" class="edit-cat-view-btn"><i class="fa fa-edit"></i></button>
+                                                                                 <button type="button" class="delete-cat-view-btn"><i class="fa fa-trash"></i></button>
+                                                                              </div>
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 margin_top_10 price-icon-and-input-controller-of-drink view-drink-list-controller">
+                                                                              <div>
+                                                                                 <input type="text" class="readonlremovetext" placeholder="Chardonnay" readonly>
+                                                                              </div>
+                                                                              <div>
+                                                                                 <button type="button" class="edit-cat-view-btn"><i class="fa fa-edit"></i></button>
+                                                                                 <button type="button" class="delete-cat-view-btn"><i class="fa fa-trash"></i></button>
+                                                                              </div>
+                                                                           </div>
+                                                                     </div>
+                                                               </div>
+                                                                 <!--Drink Price Menual Enter-->
+                                                                 <div class="row margin_top_50">
+                                                                    <button type="button" class="add-category-model-opaner center-x" data-toggle="modal" data-target="#adddrinkmanually">+ Add Drink Manually</button>
+                                                                 </div>
+                                                              </div>
+                                                           </div>
+                                                        </div>
+                                                     </div>
+                                                  </div>
+                                               </div>
+                                            </div>
+                                            <!-- Verticle Tab End -->
+                                         </div>
+
+                                      </div>
+                                   </div>
+                                   <a href="managecategory.html" class="btn btn-basic-custom line-hight-28">Back</a>
+                                   <button class="btn btn-success-custom float-right">Save Changes</button>
+                                </div>
+                                <!-- Liquor Holder End -->
+                                <!-- Drink second Step End -->
+                             </div>
+                             <!-- Drinks Details -->
+                     </div>
+                  </div>
+               </section>
+               <!-- ./Tabs --> 
+            </div>
+            <!-- /.container-fluid --> 
+            <!-- Sticky Footer -->
+            <footer class="sticky-footer">
+               <div class="container my-auto">
+                  <div class="copyright text-center my-auto"> <span>Copyright © Barbuddy 2018</span> </div>
+               </div>
+            </footer>
+         </div>
+         <!-- /.content-wrapper --> 
+      </div>
+      <!-- /#wrapper --> 
+      <!-- Scroll to Top Button--> 
+      <a class="scroll-to-top rounded" href="#page-top"> <i class="fa fa-angle-up"></i> </a> 
+      <!-- Logout Modal-->
+      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+               </div>
+               <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+               <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                  <a class="btn btn-primary" href="login.html">Logout</a> 
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Add Drink Category Modal Start -->
+      <div class="modal fade add-category-model" id="addCategory" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close red-cross-btn" data-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <label>Add Category</label>
+                  <div class="row">
+                     <div class="col-9">
+                        <div class="border-bottom-animation">
+                           <input type="text" placeholder="Enter new category" class="enter-new-category">
+                        </div>
+                     </div>
+                     <div class="col-3">
+                        <button type="button" class="add-category-model-opaner">+ Add</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Add Drink Category Model End -->
+      <!-- Add Drink Sub-Category Model Start -->
+      <div class="modal fade add-category-model" id="addsubCategory" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close red-cross-btn" data-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <label>Add Sub Category</label>
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="tringle_arrow border-bottom-animation">
+                           <select>
+                              <option value="Beer">Beer</option>
+                              <option value="Liquor">Liquor</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-12 auto-suggest-tags">
+                        <div class="auto-suggest-tag-holder">
+                           <input id="tags" name="tags" type="text" value="" />
+                        </div>
+                     </div>
+                     <div class="col-12 text-center">
+                        <button type="submit" class="add-category-model-opaner width-150">Submit</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Add Drink Sub-Category Model End -->
+      <!-- Add Drink Manually Model Start -->
+
+<div class="modal fade add-category-model" id="adddrinkmanually" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add Drink</h2>
+                <button type="button" class="close red-cross-btn" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="happy_hours_form_holder add-drink-manually-form-holder">
+                    <form method="POST">
+                        <ul class="form_holder">
+                            <li>
+                                 <input placeholder="Drink Name" type="text">
+                            </li>
+                            <li>
+                                <textarea placeholder="Short Description"></textarea>
+                            </li>
+                            <li class="no_border custom_check_and_radio">
+                                <label class="width_half margin_right_30">Drinks Available On:</label>
+                                <span class="check_and_radio_holder"><input name="draft_available_on" id="draft_available_on" type="checkbox"><label for="draft_available_on">Draft</label></span>
+                                <span class="check_and_radio_holder"><input name="bottle_available_on" id="bottle_available_on" type="checkbox"><label for="bottle_available_on">Bottle</label></span>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col btn-left"><a class="btn btn-basic-custom line-hight-28">Back</a></div>
+                <div class="col btn-right"><button class="btn btn-success-custom float-right">Submit</button></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add Drink Manually Model End -->
+
+      <!-- Bootstrap core JavaScript--> 
+      <script src="js/jquery.min.js"></script> 
+      <script src="js/bootstrap.bundle.min.js"></script> 
+      <!-- Core plugin JavaScript--> 
+      <script src="js/jquery.easing.min.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
+
+      <script src="js/owl.carousel.min.js"></script> 
+      <!-- For Batch Tag -->
+      <script src="js/tagsly.js"></script>
+      <!-- Custom scripts for all pages--> 
+      <script src="js/custom.js"></script> 
+      <!-- <script type="text/javascript">
+         $('.card-header-wrapper').on('click', function(e) {
+           var edit_list = $('.edit-list');
+           var delete_list = $('.delete-list');
+          if (e.target != edit_list || e.target != delete_list )
+            //return false;
+          console.log(e.target);
+          console.log(edit_list);
+         });
+         </script> --> 
+      <script type="text/javascript">
+         $(document).on('click.bs.dropdown.data-api', '.dropdown.keep-inside-clicks-open', function (e) {
+         e.stopPropagation();
+         });
+         
+         
+         // Auto Suggest Tag With manual Input
+         
+         $(function() {
+         $('#tags').tagsly({
+         suggestions: function(input, cb) {
+         cb(['Cider', 'Craft Beer', 'Black Dog', 'Labujin']);
+         },
+         placeholder: 'Enter Sub Category'
+         // maxItems: 5
+         });
+         });
+         
+         // Auto Suggest Tag With manual Input
+         
+         // Beer Holder Show Hide 
+         
+         $(".beer-holder-show").click(function(){
+         $(".beer-holder").show();
+         $(".drink-special-holder").hide();
+         });
+         
+         $(".drink-special-holder-show").click(function(){
+         $(".drink-special-holder").show();
+         $(".beer-holder").hide();
+         }); 
+         
+         $(".liquor-holder-show").click(function(){
+         $(".liquor-holder").show();
+         $(".drink-special-holder").hide();
+         });
+         
+         $(".liquor-special-holder-show").click(function(){
+         $(".drink-special-holder").show();
+         $(".liquor-holder").hide();
+         }); 
+         
+         // Beer Holder Show Hide 
+
+         // Food Edit Show Hide Start
+
+         $(function() {
+            $(".show-edit-box-and-hide-view-box").click(function(){
+                $(".show-hide-food-edit-box").show();
+                $(".show-hide-food-box").hide();
+            });
+
+            $(".show-view-box-and-hide-edit-box").click(function(){
+                $(".show-hide-food-edit-box").hide();
+                $(".show-hide-food-box").show();
+            }); 
+        });
+
+        // Food Edit Show Hide End
+        // Multy Select Start
+
+        $(function() {
+
+        $('#drink_type')
+        .multiselect({
+            maxHeight: 300,
+            enableFiltering: true,
+            nonSelectedText: 'Offer on Drink type',
+            enableCaseInsensitiveFiltering: true,
+            allSelectedText: 'All',
+            includeSelectAllOption: true,
+        })
+        .multiselect('updateButtonText');
+        });
+
+        // Multy Select End
+
+        // Show Hide Edit Offer Box
+        
+        $(function() {
+            $(".show-hide-offer-edit-box").click(function(){
+                $(".offers-edit-holder-box").show();
+                $(".offer-box-holder").hide();
+            });
+
+            $(".show-view-offer-box-and-hide-edit-offer-box").click(function(){
+                $(".offers-edit-holder-box").hide();
+                $(".offer-box-holder").show();
+            }); 
+
+
+            var owl = $('.owl2');
+                owl.owlCarousel({
+                    // autoplay: true,
+                // autoplayTimeout: 2000,
+                // loop: true,
+                    nav: true,
+                    // margin:20,
+                    navText : ["<i class='fa fa-chevron-left'  aria-hidden='true'></i>","<i class='fa fa-chevron-right' aria-hidden='true'></i>"],
+                    responsive: {
+                    0: {
+                        items: 1
+                    },
+                    480: {
+                        items: 2
+                    },
+                    640: {
+                        items: 3
+                    }
+                    }
+                })
+                
+                $('.owl-carousel').on('mouseleave',function(e){
+                owl.trigger('play.owl.autoplay');
+            })
+            $('.owl-carousel').on('mouseover',function(e){
+                owl.trigger('stop.owl.autoplay');
+            })
+
+
+            // Days Active and Inactive
+
+            $(".day_active_inactive label input[type=checkbox]").click(function(){
+            $(this.parentNode).toggleClass('active', this.checked);
+            });
+
+            // Days Active And Inactive
+            
+
+            // Read only mode out
+            
+            $('.edit-cat-view-btn').click(function(){
+               $(".readonlremovetext").removeAttr("readonly");  
+            });
+
+            $('.edit-title-drink-btn').click(function(){
+               $(".title-edit").removeAttr("readonly");  
+            });
+
+            // Read Only Mode out
+
+
+        });
+
+
+        // Show Hide Edit Offer Box
+                
+      </script>
+   </body>
+</html>
+
