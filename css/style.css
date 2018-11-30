@@ -2589,7 +2589,8 @@ input.required{
 .file_type_controller{
   position: relative;
 }
-.file_type_controller input[type="file"]{
+.file_type_controller input[type="file"],
+.file_type_controller input:not([type="submit"]){
   opacity: 0 !important;
   position: absolute !important;
   width: 174px !important;
