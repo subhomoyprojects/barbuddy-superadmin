@@ -2608,7 +2608,9 @@ input.required{
 .glass-bottle-holder li {
   margin: 10px;
 }
-
+.text-middle{
+  justify-content: center;
+}
 
 
 /* ============================ After Developing ===============================*/
