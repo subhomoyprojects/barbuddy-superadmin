@@ -2500,8 +2500,8 @@ input.required{
   vertical-align: middle !important;
 }
 .alert-msg-controller{
-  font-size: 15px;
-  color:#686c79;
+  font-size: 20px;
+  color: #686c79;
 }
 .background-none,
 .background-none input,
@@ -2611,6 +2611,20 @@ input.required{
 .text-middle{
   justify-content: center;
 }
+.min-width-100{
+  width:100px;
+}
+.min-height-50{
+  min-height: 50px;
+}
+.info-controller{
+  background-color: #8b2be2;
+}
+.info-controller h5{
+  color:#fff;
+  text-align: center;
+}
+
 
 
 /* ============================ After Developing ===============================*/
