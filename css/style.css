@@ -2536,6 +2536,7 @@ input.required{
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2px;
+  min-width: 142px;
 }
 .reports-to-pending{
   background-color: #ffd65d;
@@ -2547,6 +2548,7 @@ input.required{
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2px;
+  min-width: 142px;
 }
 .reports-to-blog .fa{
   margin-left: 5px;
@@ -2561,6 +2563,7 @@ input.required{
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2px;
+  min-width: 142px;
 }
 .upcomming-btn{
   margin-right: 0;
@@ -2626,7 +2629,6 @@ input.required{
   text-align: center;
   font-size: 28px;
 }
-
 
 
 /* ============================ After Developing ===============================*/
@@ -2780,6 +2782,11 @@ input.required{
   }
   .glass-bottle-holder li .nav-link {
     font-size: 13px;
+  }
+  .block-blog,
+  .reports-to-pending,
+  .reports-to-blog{
+    min-width:auto;
   }
 }
 @media (min-width:320px) and (max-width:479px)
