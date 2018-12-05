@@ -2629,6 +2629,81 @@ input.required{
   text-align: center;
   font-size: 28px;
 }
+/*-----------*/
+.common-day-time-controller label.switch{
+  margin-top: 0;
+  height: 22px;
+}
+.common-day-time-controller label{
+  vertical-align: middle;
+}
+.common-day-time-controller .slider{
+  width: 36px;
+  height: 20px;
+  margin: 0 auto;
+}
+.common-day-time-controller .slider::before {
+  height: 17px;
+  width: 17px;
+  left: 2px;
+  bottom: 2px;
+}
+.common-day-time-controller{
+  align-items: center;
+  display: flex;
+}
+.common-day-time-controller .switch input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+.common-day-time-controller .switch input:checked + .slider {
+  background-color: #8f2de2;
+}
+@media(min-width:320px) and (max-width:991px)
+{
+  .common-day-time-controller .slider{
+      margin: 0 auto;
+      left: auto;
+      right: 0;
+  }
+  .day-active-inactive-holder{
+      margin-bottom: 5px;
+  }
+}
+
+.day-intime-holder input.timepicker,
+.day-outtime-holder input.timepicker{
+  padding: 7px !important;
+  padding-right: 25px !important;
+  border:1px solid #8d2fdf !important;
+  width: 100%;
+}
+.day-intime-holder .watch_icon::before,
+.day-outtime-holder .watch_icon::before{
+  right: 5px !important;
+  top: 10px !important;
+}
+.common-day-time-controller label{
+  font-size: 14px !important;
+}
+.day-outtime-holder div p,
+.day-intime-holder div p{
+  font-size: 14px;
+  color:#686868;
+}
+.day-outtime-holder > div:first-child,.day-intime-holder > div:first-child{
+  margin-right:7px;
+}
+@media(min-width:320px) and (max-width:479px)
+{
+  .common-day-time-controller{
+      padding:5px !important;
+  }
+  .common-day-time-controller input{
+      font-size: 12px !important;
+  }
+}
 
 
 /* ============================ After Developing ===============================*/
