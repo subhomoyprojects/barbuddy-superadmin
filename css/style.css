@@ -2710,7 +2710,6 @@ input.required{
   color: #686868;
   font-weight: 600;
   margin-left: 5px;
-  border: 2px solid #73909d;
   min-width: 60px;
   padding: 3px;
   margin: 0 4px;
@@ -2718,14 +2717,6 @@ input.required{
 .user-credits p{
   display: flex;
   text-align: left;
-}
-.user-credits p strong{
-  font-weight: normal;
-  width:70%;
-}
-.user-credits p span{
-  font-weight: normal;
-  width:30%;
 }
 
 /* ============================ After Developing ===============================*/
