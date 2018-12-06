@@ -2714,9 +2714,16 @@ input.required{
   padding: 3px;
   margin: 0 4px;
 }
-.user-credits p{
+/* .user-credits p{
   display: flex;
   text-align: left;
+} */
+.user-credits p strong{
+  font-weight: normal;
+}
+.user-credits p span{
+  font-weight: normal;
+  margin-right: 10px !important;
 }
 
 /* ============================ After Developing ===============================*/
