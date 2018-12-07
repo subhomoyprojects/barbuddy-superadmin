@@ -2739,6 +2739,25 @@ input.required{
   background-color: #fff;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+@media (min-width:320px) and (max-width:767px)
+{
+  .user-credits p {
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+  .user-credits p span {
+    min-width: auto;
+    font-size: 14px;
+  }
+}
+@media (min-width:320px) and (max-width:479px)
+{
+  .user-credits p span {
+    min-width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+}
 
 
 /* ============================ After Developing ===============================*/
