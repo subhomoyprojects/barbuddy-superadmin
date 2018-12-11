@@ -2768,6 +2768,7 @@ input.required{
   padding: 3px;
   background-color: #f1f1f1;
   border: 1px solid #abbcc4;
+  width: 100%;
 }
 .sponsors-img-name-holder h5 input[readonly]{
   font-weight: 600;
