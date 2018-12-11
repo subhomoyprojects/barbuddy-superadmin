@@ -2758,6 +2758,12 @@ input.required{
     text-align: center;
   }
 }
+.small-hight .sponsors-holder li{
+  min-height: 60px;
+}
+.small-hight .button-holder-sponsers {
+  top: -5px;
+}
 
 
 /* ============================ After Developing ===============================*/
