@@ -2779,6 +2779,15 @@ input.required{
   background-color: transparent;
   color: inherit;
 }
+@media (min-width:320px) and (max-width:767px)
+{
+  .setting-tiles strong{
+    width:auto;
+  }
+}
+.owl-theme .owl-nav .disabled{
+  opacity: 0;
+}
 
 
 /* ============================ After Developing ===============================*/
