@@ -2673,7 +2673,9 @@ input.required{
 }
 
 .day-intime-holder input.timepicker,
-.day-outtime-holder input.timepicker{
+.day-outtime-holder input.timepicker,
+.day-intime-holder input.clockpicker,
+.day-outtime-holder input.clockpicker{
   padding: 7px !important;
   padding-right: 25px !important;
   border:1px solid #8d2fdf !important;
