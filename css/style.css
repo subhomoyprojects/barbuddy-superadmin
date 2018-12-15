@@ -2868,10 +2868,13 @@ input.required{
     text-align: center;
   }
   .referral-date-holder p:not(.valid-till) {
-    font-size: 14px;
+    font-size: 12px;
     justify-content: flex-start;
     max-width: 100%;
     flex-wrap: wrap;
+  }
+  .referral-date-holder p:not(.valid-till) strong {
+    padding: 4px;
   }
   .referral-date-holder p:not(.valid-till) span {
     margin-bottom: 5px;
@@ -2887,6 +2890,25 @@ input.required{
     max-width: 100%;
   }
 }
+/*---------*/
+.referral-date-holder h5{
+  font-weight: 600;
+  color: #757575;
+  position: relative;
+  padding-bottom: 10px;
+}
+.referral-date-holder h5::after{
+  content: "";
+  width:50px;
+  height: 2px;
+  background-color: #757575;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 
 
 /* ============================ After Developing ===============================*/
