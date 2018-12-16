@@ -2915,6 +2915,21 @@ input.required{
     margin-bottom: 5px;
   }
 }
+/*-----------*/
+.setting-tiles{ 
+  width: 260px;
+}
+.setting-tiles span {
+  padding: 0 40px;
+}
+.manage-super-admin-icon7{
+  background-position: 0 -647px;
+}
+.setting-tiles.active .manage-super-admin-icon7,
+.setting-tiles:hover .manage-super-admin-icon7{
+  background-position: -72px -647px;
+}
+
 
 
 
