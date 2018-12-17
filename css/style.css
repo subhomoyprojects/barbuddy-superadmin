@@ -3185,6 +3185,9 @@ input.required{
     padding: 0 8px;
     font-size: 12px;
   }
+  .offer-img-edit-btn-holder{
+    flex-wrap: wrap;
+  }
 
 }
 @media (min-width:480px) and (max-width:569px)
