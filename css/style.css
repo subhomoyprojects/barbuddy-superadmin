@@ -2912,6 +2912,7 @@ input.required{
 {
   .offer-listing-controller .list-card .card-header ul li.small {
     font-size: 11px;
+    margin-bottom: 5px;
   }
 }
 
