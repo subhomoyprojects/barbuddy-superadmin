@@ -2929,6 +2929,11 @@ input.required{
 .setting-tiles:hover .manage-super-admin-icon7{
   background-position: -72px -647px;
 }
+/*------------*/
+.highlight-text{
+  font-size: 18px;
+  color: #6e1fe2;
+}
 
 
 
