@@ -2934,6 +2934,16 @@ input.required{
   font-size: 18px;
   color: #6e1fe2;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.smok-nonsmoke-controller{
+  flex-wrap: wrap;
+}
+.smok-nonsmoke-controller label{
+  margin-bottom: 5px;
+}
 
 
 
