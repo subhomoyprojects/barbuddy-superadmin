@@ -2450,7 +2450,7 @@ input.required{
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.loader_drink,.loader_drink_category{
+.loader_drink,.loader_drink_category,.loader_event{
   background: rgba(255,255,255,0.5);
   position: fixed;
   width: 100%;
@@ -2465,7 +2465,7 @@ input.required{
   align-items: center;
 }
 
-.loader_drink img,.loader_drink_category img{
+.loader_drink img,.loader_drink_category img,.loader_event img{
   width: 40px;
 }
 .save-title-drink-btn{
