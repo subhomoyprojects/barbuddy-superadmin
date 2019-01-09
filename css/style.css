@@ -19,6 +19,9 @@ input[type="submit"],
 a{
   cursor: pointer;
 }
+.btn-success-custom:hover{
+	color:#fff;
+}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -2675,7 +2678,9 @@ input.required{
 .day-intime-holder input.timepicker,
 .day-outtime-holder input.timepicker,
 .day-intime-holder input.clockpicker,
-.day-outtime-holder input.clockpicker{
+.day-outtime-holder input.clockpicker,
+.day-intime-holder input.time-style,
+.day-outtime-holder input.time-style{
   padding: 7px !important;
   padding-right: 25px !important;
   border:1px solid #8d2fdf !important;
@@ -2982,7 +2987,79 @@ input.required{
   }
 }
 /*------------*/
+/*9-1-2019*/
 
+.open-hours-controller > span{
+  display: inline-block;
+  width: 40%;
+}
+.open-hours-controller > div{
+  width:60%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.open-hours-controller > div > span{
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px;
+}
+.open-hours-controller div > label.switch{
+  width:36px;
+  justify-content: flex-end;
+}
+.open-hours-controller div > label.switch span{
+  left: auto;
+}
+.open-all-day-hour-holder{
+  transition: all ease-in-out 0.3s;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  background-color: #efefef;
+}
+.open-all-day-hour-holder > div:not(.save-time-button){
+  display: flex;
+  width:100%;
+  align-items: center;
+}
+.open-all-day-hour-holder > div div{
+  width:33.33%;
+  margin-right: 15px;
+}
+.open-all-day-hour-holder > div div:last-child{
+  margin-right: 0;
+}
+.open-all-day-hour-holder > div div input{
+  border: 1px solid #8d2fdf !important;
+}
+.open-all-day-hour-holder .watch_icon::before, .open-all-day-hour-holder .watch_icon::before {
+  right: 5px !important;
+  top: 12px !important;
+}
+.open-all-day-hour-holder div input{
+  padding: 7px !important;
+  width: 100%;
+}
+.open-all-day-hour-holder > div div{
+  font-size: 14px;
+  color: #686868; 
+}
+.min-width100px{
+  min-width: 100px;
+}
+@media (min-width:320px) and (max-width:479px)
+{
+  .open-all-day-hour-holder > div:not(.save-time-button) {
+    flex-wrap: wrap;
+  }
+  .open-all-day-hour-holder > div div {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/*9-1-2019*/
 
 
 /* ============================ After Developing ===============================*/
