@@ -76,14 +76,21 @@
                                 </div>
                                 <!--Drink first step end-->
                                 <!-- Drink Second Step Start -->
-                                <div class="beer-holder">
+                                <div class="beer-holder" style="display:none;">
                                    <!-- Beer Holder Start -->
                                    <div class="category-menu-and-subcatagory-menu-holder">
+                                      <div class="text-right">
+                                         <button class="btn btn-success-custom text-center">Save Changes</button>
+                                      </div>
                                       <ul class="nav nav-pills category-menu-holder" id="pills-tab" role="tablist">
-                                         <li class="nav-item">
-                                            <a class="nav-link active" id="pills-drinks-cat1" data-toggle="pill" href="#pills-cat1" role="tab" aria-controls="pills-cat1" aria-selected="true">Domestic</a>
+                                         <li class="nav-item custom_check_and_radio child-category-holder">
+                                         	<span class="child-category-controller"><input type="checkbox" id="child_category1" name="child_category1" class="checked-enabel"><label for="child_category1" class="checked-enabel"></label></span>
+                                            <a class="nav-link active" id="pills-drinks-cat1" data-toggle="pill" href="#pills-cat1" role="tab" aria-controls="pills-cat1" aria-selected="true">
+                                            Domestic
+                                            </a>
                                          </li>
-                                         <li class="nav-item">
+                                         <li class="nav-item custom_check_and_radio child-category-holder">
+                                         <span class="child-category-controller"><input type="checkbox" id="child_category2" name="child_category2" class="checked-enabel"><label for="child_category2" class="checked-enabel"></label></span>
                                             <a class="nav-link" id="pills-drinks-cat2" data-toggle="pill" href="#pills-cat2" role="tab" aria-controls="pills-cat2" aria-selected="false">Imports</a>
                                          </li>
                                          <li class="nav-item">
@@ -329,7 +336,7 @@
                                    <button class="btn btn-success-custom float-right">Save Changes</button>
                                 </div>
                                 <!-- Beer Holder End -->
-                                <div class="liquor-holder">
+                                <div class="liquor-holder" style="display:none;">
                                    <!-- Liquor Holder Start -->
                                    <div class="category-menu-and-subcatagory-menu-holder">
                                       <ul class="nav nav-pills category-menu-holder" id="pills-tab" role="tablist">

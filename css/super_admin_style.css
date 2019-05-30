@@ -2453,7 +2453,7 @@ input.required{
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.loader_drink,.loader_drink_category,.loader_event{
+.loader_drink,.loader_drink_category,.loader_event,.loader-controller{
   background: rgba(255,255,255,0.5);
   position: fixed;
   width: 100%;
@@ -3081,6 +3081,9 @@ input.required{
   font-size: 13px;
   color: #696969;
   margin-bottom: 10px;
+}
+.ui-timepicker-list li {
+  padding: 5px 0 5px 7px;
 }
 
 /*14-1-2019*/
